@@ -1,35 +1,38 @@
 import React from 'react';
+import './navbar.scss'
+
 
 function Navbar () {
     return (
 <div>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+<nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <a className="navbar-brand" href="/">
+    <img className="logo mr-3" src="/images/logo.jpg" alt="logo fidens"/>
+  </a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="/sobre">O Colégio <span class="sr-only">(current)</span></a>
+  <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul className="navbar-nav">
+      <li className="nav-item active">
+        <a className="nav-link" href="/sobre">O Colégio <span className="sr-only">(current)</span></a>
       </li>
       
      
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Segmentos
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="/ensino-infantil">Ensino Infantil</a>
-          <a class="dropdown-item" href="/fundamental-I">Fundamental I</a>
-          <a class="dropdown-item" href="/fundamental-II">Fundamental II</a>
-          <a class="dropdown-item" href="/ensino-medio">Ensino Médio</a>
-          <a class="dropdown-item" href="/bilingue">Bilíngue</a>
-          <a class="dropdown-item" href="/integral">Integral</a>
+      <li className="seg nav-item active">
+      <a className="nav-link" href="/">Segmentos</a>
+
+        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a className="dropdown-item" href="/ensino-infantil">Ensino Infantil</a>
+          <a className="dropdown-item" href="/fundamental-I">Fundamental I</a>
+          <a className="dropdown-item" href="/fundamental-II">Fundamental II</a>
+          <a className="dropdown-item" href="/ensino-medio">Ensino Médio</a>
+          <a className="dropdown-item" href="/bilingue">Bilíngue</a>
+          <a className="dropdown-item" href="/integral">Integral</a>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/contato">Contato</a>
+      <li className="nav-item active">
+        <a className="nav-link" href="/contato">Contato</a>
       </li>
     </ul>
   </div>
