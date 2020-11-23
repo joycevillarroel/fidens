@@ -32,6 +32,9 @@ function Navbar () {
         </div>
       </li>
       <li className="nav-item active">
+        <a className="nav-link" href="/contato">Cursos Extracurriculares</a>
+      </li>
+      <li className="nav-item active">
         <a className="nav-link" href="/contato">Contato</a>
       </li>
     </ul>
