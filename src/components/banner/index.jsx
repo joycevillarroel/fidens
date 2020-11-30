@@ -5,7 +5,7 @@ import style from './style.module.css'
 const Banner = () => {
     return (
         <div>
-            <img src={image} className={style.img} />
+            <img src={image} className={style.img} alt="banner" />
         </div>
     )
 }

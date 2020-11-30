@@ -58,7 +58,7 @@ class Navbar extends Component {
           <BtNavbar.Collapse onAuxClick={this.menuClick} className="d-lg-flex flex-row justify-content-end" id="basic-navbar-nav">
             <nav className="d-flex flex-column flex-lg-row align-content-center my-2 my-lg-0 mr-lg-3" id="menu">
                 <>
-                <NavLink to="/#intro" className="p-2 text-dark"style={{ textDecoration: "none" }}>
+                <NavLink to="/" className="p-2 text-dark"style={{ textDecoration: "none" }}>
                     HOME
                   </NavLink>
                   <NavLink to="/#intro" className="p-2 text-dark"style={{ textDecoration: "none" }}>
@@ -70,8 +70,8 @@ class Navbar extends Component {
                   <HashLink to="/#about" className="p-2 text-dark" style={{ textDecoration: "none" }}>
                     BILÍNGUE
                   </HashLink>
-                  <HashLink to="/#howItWorks" className="p-2 text-dark" style={{ textDecoration: "none" }}>
-                    MATRÍCULAS
+                  <HashLink to="/fotos" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                    GALERIA DE FOTOS
                   </HashLink>
                   <HashLink to="/#instructions" className="p-2 text-dark" style={{ textDecoration: "none" }}>
                     DEPOIMENTOS

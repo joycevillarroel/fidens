@@ -7,7 +7,7 @@ const About = () => {
             <h1>Sobre o Colégio</h1>
             <div className={style.videoContainer}>
             <div>
-            <iframe id="ytplayer" type="text/html" className={style.video} src='http://www.youtube.com/embed/P8GwOO4bY3k' frameBorder="0"/>
+            <iframe title="anglo" id="ytplayer" type="text/html" className={style.video} src='http://www.youtube.com/embed/P8GwOO4bY3k' frameBorder="0"/>
             </div>
             <div className={style.textContainer}>
             <h4>Colégio Fidens Anglo</h4>

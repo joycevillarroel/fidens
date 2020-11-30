@@ -6,12 +6,14 @@ import Home from '../pages/home/index';
 import Childish from '../pages/childish';
 import Fundamental from '../pages/fundamental';
 import HighSchool from '../pages/highschool.jsx';
+import Gallery from '../components/galery';
 
 const Routes = () => {
     return (
         <Router history={history}>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/fotos' component={Gallery}/>
             <Route exact path='/infantil' component={Childish} />
             <Route exact path='/fundamental' component={Fundamental} />
             <Route exact path='/medio' component={HighSchool} />

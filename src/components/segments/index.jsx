@@ -20,7 +20,7 @@ const Segments = () => {
     </a>
     <Carousel.Caption>
       <h3>Educação Infantil</h3>
-      <a>Saiba mais</a>
+      <a href="/infantil">Saiba mais</a>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>

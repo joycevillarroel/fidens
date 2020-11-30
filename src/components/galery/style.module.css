@@ -1,0 +1,11 @@
+.picturesContainer > img{
+    width: 100%;
+    padding: 20px;
+}
+
+@media screen and (min-width: 400px) {
+    .picturesContainer > img{
+        width: 200px;
+        padding: 20px;
+    } 
+}
