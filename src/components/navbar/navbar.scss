@@ -1,3 +1,39 @@
-.logo {
-    max-height: 40px;
-}
+.Navbar {
+    min-height: 120px;
+  
+    a {
+      font-family: 'Lato';
+      
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    
+    .navbar {
+      min-height: 120px;
+      background-color: #fff;
+      
+      .logo {
+        max-height: 90px;
+
+      }
+    }
+    
+    &.home {
+      max-height: 40px;
+      background-color: #E1E1E1;
+  
+      .navbar {
+        transition: all .4s ease;
+      }
+  
+      &.top:not(.menu-open) {
+        .navbar {
+          height: 100px;
+          background-color: rgba(255,255,255,0);
+          box-shadow: 0 .125rem .25rem rgba(0,0,0,0) !important;
+          border-bottom-color: rgba(222, 226, 230, 0) !important;
+        }
+      }
+    }
+  }
