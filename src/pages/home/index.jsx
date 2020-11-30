@@ -3,14 +3,16 @@ import Navbar from '../../components/navbar/navbar';
 import Footer from '../../components/footer/footer';
 import Banner from '../../components/banner/index';
 import About from '../../components/about';
+import Segments from '../../components/segments';
 
 const Home = () => (
 <div>
     <Navbar/>
     <Banner/>
     <About/>
+    <Segments/>
     <Footer/>
 </div>
-)
+);
 
 export default Home;
