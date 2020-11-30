@@ -1,17 +1,7 @@
 import React from 'react';
-import './App.css';
-import Navbar from './components/navbar';
-import Footer from './components/footer';
-import Home from './components/home/index'
+import Routes from './Router/routes';
+import history from './Router/history';
 
-function App() {
-  return (
-    <div className="App">
-     <Navbar/>
-     <Home/>
-     <Footer/>
-    </div>
-  );
-}
+const App = () => <Routes history={history}/>
 
 export default App;
