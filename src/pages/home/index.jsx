@@ -4,6 +4,7 @@ import Footer from '../../components/footer/footer';
 import Banner from '../../components/banner/index';
 import About from '../../components/about';
 import Segments from '../../components/segments';
+import Bilingual from '../../components/bilingual';
 
 const Home = () => (
 <div>
@@ -11,6 +12,7 @@ const Home = () => (
     <Banner/>
     <About/>
     <Segments/>
+    <Bilingual/>
     <Footer/>
 </div>
 );
