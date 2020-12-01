@@ -1,7 +1,7 @@
 import React from  'react';
-import inf from '../../images/edInfantil.jpg'
-import fund1 from '../../images/fund1.jpg'
-import fund2 from '../../images/fund2.jpeg'
+import inf from '../../images/EcossistemaAnglo_Outdoor5.jpg'
+import fund1 from '../../images/EcossistemaAnglo_Outdoor4.jpg'
+import fund2 from '../../images/EcossistemaAnglo_Outdoor2.jpg'
 import Carousel from 'react-bootstrap/Carousel';
 import style from './style.module.css'
 
@@ -18,7 +18,7 @@ const Segments = () => {
       alt="First slide"
     />
     </a>
-    <Carousel.Caption>
+    <Carousel.Caption className={style.edu}>
       <h3>Educação Infantil</h3>
       <a href="/infantil">Saiba mais</a>
     </Carousel.Caption>
@@ -31,7 +31,7 @@ const Segments = () => {
       alt="Third slide"
     />
 </a>
-    <Carousel.Caption>
+    <Carousel.Caption className={style.edu}>
       <h3>Ensino Fundamental</h3>
       <a href="/fundamental">Saiba mais</a>
     </Carousel.Caption>
@@ -44,7 +44,7 @@ const Segments = () => {
       alt="Third slide"
     />
 </a>
-    <Carousel.Caption>
+    <Carousel.Caption className={style.edu}>
       <h3>Ensino Médio</h3>
       <a href="/medio">Saiba mais</a>
     </Carousel.Caption>

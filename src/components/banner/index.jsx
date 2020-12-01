@@ -4,7 +4,7 @@ import style from './style.module.css'
 
 const Banner = () => {
     return (
-        <div>
+        <div className={style.container}>
             <img src={image} className={style.img} alt="banner" />
         </div>
     )

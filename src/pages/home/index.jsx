@@ -6,7 +6,6 @@ import About from '../../components/about';
 import Segments from '../../components/segments';
 import Bilingual from '../../components/bilingual';
 import Contact from '../../components/contact';
-import Depositions from '../../components/depositions';
 
 const Home = () => (
 <div>
@@ -15,7 +14,6 @@ const Home = () => (
     <About/>
     <Segments/>
     <Bilingual/>
-    <Depositions/>
     <Contact/>
     <Footer/>
 </div>

@@ -5,11 +5,11 @@ const Footer = () => (
   <footer className='footer mt-auto py-3 color'>
     <div className="footer-copyright text-center">
       <p>
-        © 2020 Instituto Educacional Fidens Fidens. Todos os direitos reservados.
+        © 2020 Instituto Educacional Fidens. Todos os direitos reservados.
       </p>
     </div>
 
-  </footer>
+  </footer> 
 )
 
 export default Footer;
