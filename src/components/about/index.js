@@ -1,9 +1,17 @@
-import React from  'react';
+import React, { useState } from  'react';
 import style from './style.module.css'
 
 const About = () => {
-    return (
-        <div className={style.container} >
+    const [mail, setMail] = useState('')
+
+    const handleChange = value => {
+        setMail(value)
+    }
+
+    const enviar = `mailto:${mail}`
+    // const enviar = "mailto:larry,dan?cc=mike&bcc=sue&subject=test&body=type+your&body=message+here"
+    return ( 
+        <div className={style.container} id="about">
             <h1>Sobre o Colégio Fidens</h1>
             <div className={style.videoContainer}>
             <div>
@@ -15,6 +23,11 @@ const About = () => {
             <p>“A educação do futuro acontecendo hoje, preparando os alunos para os desafios da vida e do mercado de trabalho no Século XXI."</p>
             </div>
             </div>
+
+        <form action={enviar} >
+            <input onChange={e => handleChange(e.target.value)} placeholder="Digite o mail de destino"></input>
+            <button>enviar</button>
+        </form>
         </div>
     )
 }

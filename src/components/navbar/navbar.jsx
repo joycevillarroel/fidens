@@ -4,7 +4,7 @@ import BtNavbar from 'react-bootstrap/Navbar';
 import { HashLink } from 'react-router-hash-link';
 import './navbar.scss';
 import logo from '../../images/logo.jpg';
-
+import { NavDropdown } from 'react-bootstrap';
 
 class Navbar extends Component {
   constructor(props) {
@@ -57,29 +57,32 @@ class Navbar extends Component {
           <BtNavbar.Toggle aria-controls="basic-navbar-nav" />
           <BtNavbar.Collapse onAuxClick={this.menuClick} className="d-lg-flex flex-row justify-content-end" id="basic-navbar-nav">
             <nav className="d-flex flex-column flex-lg-row align-content-center my-2 my-lg-0 mr-lg-3" id="menu">
-                <>
-                <NavLink to="/" className="p-2 text-dark"style={{ textDecoration: "none" }}>
-                    HOME
+              <>
+                <NavLink to="/" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                  HOME
                   </NavLink>
-                  <NavLink to="/#intro" className="p-2 text-dark"style={{ textDecoration: "none" }}>
-                  SOBRE
-                </NavLink>
-                  <NavLink to="/#intro" className="p-2 text-dark"style={{ textDecoration: "none" }}>
-                    SEGMENTOS
-                  </NavLink>
-                  <HashLink to="/#about" className="p-2 text-dark" style={{ textDecoration: "none" }}>
-                    BILÍNGUE
+                <NavDropdown title="SEGMENTOS" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/infantil">ENSINO INFANTIL</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="fundamentalI">ENSINO FUNDAMENTAL I</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="fundamentalII">ENSINO FUNDAMENTAL II</NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="medio">ENSINO MÉDIO</NavDropdown.Item>
+                </NavDropdown>
+                <HashLink to="/bilingue" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                  BILÍNGUE
                   </HashLink>
-                  <HashLink to="/fotos" className="p-2 text-dark" style={{ textDecoration: "none" }}>
-                    GALERIA DE FOTOS
+                <HashLink to="/fotos" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                  FOTOS
                   </HashLink>
-                  <HashLink to="/#instructions" className="p-2 text-dark" style={{ textDecoration: "none" }}>
-                    DEPOIMENTOS
+                <HashLink to="/depoimentos" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                  DEPOIMENTOS
                   </HashLink>
-                  <HashLink to="/#depositions" className="p-2 text-dark" style={{ textDecoration: "none" }}>
-                    CONTATO
+                <HashLink to="/contato" className="p-2 text-dark" style={{ textDecoration: "none" }}>
+                  CONTATO
                   </HashLink>
-                </>
+              </>
             </nav>
           </BtNavbar.Collapse>
         </BtNavbar>
