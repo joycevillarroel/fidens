@@ -10,9 +10,9 @@ import Contact from '../../components/contact';
 const Home = () => (
 <div>
     <Navbar/>
-    <Banner/>
-    <About/>
     <Segments/>
+    {/* <Banner/> */}
+    <About/>
     <Bilingual/>
     <Contact/>
     <Footer/>

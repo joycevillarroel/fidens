@@ -18,6 +18,8 @@ const Bilingual = () => {
                 <div>
                     <iframe title="bilingual" id="ytplayer" type="text/html" className={style.video} src='http://www.youtube.com/embed/HUBKrGFxyi4' frameBorder="0" />
                 </div>
+      <a href="mailto:<nowiki>fidenssecretaria@hotmail.com?subject=Solicitação de contato">Clique aqui para nos enviar um e-mail!</a>
+
             </div>
         </div>
     )
